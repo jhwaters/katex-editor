@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Formula Editor",
+  "name": "Formula Editor (LaTeX)",
   "icons": [
     {
       "src": "favicon.ico",

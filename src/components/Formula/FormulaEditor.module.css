@@ -1,0 +1,88 @@
+:root {
+  --fg: black;
+  --bg: white;
+  --input-fg: var(--fg);
+  --input-bg: rgba(200,200,200,0.1);
+  --display-fg: black;
+  --display-bg: white;
+  --error-fg: #777;
+  --sansfont: "open sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+  --monofont: Inconsolata, Menlo, Monaco, Consolas, "IBM Plex Mono", "Source Code Pro", 
+  "Courier New", monospace;
+}
+
+html, body {
+  margin: 0;
+  background-color: var(--bg);
+  font-family: var(--sansfont);
+}
+
+button {
+  font-family: var(--sansfont);
+  font-size: .8em;
+  align-self: baseline;
+}
+
+.formulaWrapper {
+  padding: 10px;
+  display: grid;
+  grid-template-areas:
+    "title title"
+    "options options"
+    "input input"
+    "display display";
+  color: var(--fg);
+  background-color: var(--bg);
+}
+
+.title {
+  grid-area: title;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.formulaOptions {
+  grid-area: options;
+  display: flex;
+  flex-direction: row;
+}
+
+.formulaOptions > div {
+  margin-right: 1em;
+  display: flex;
+  flex-direction: row;
+}
+
+.formulaInput {
+  grid-area: input;
+}
+
+.formulaInput > textarea {
+  font-size: 1.2em;
+  border: 2px solid var(--fg);
+  color: var(--input-fg);
+  background-color: var(--input-bg);
+  font-family: var(--monofont);
+}
+
+.formulaDisplay {
+  width: fit-content;
+  padding: 10px 20px;
+  grid-area: display;
+  color: var(--display-fg);
+  background-color: var(--display-bg);
+  border: 1px solid var(--display-bg);
+}
+
+.formulaDisplay:hover {
+  border: 1px solid rgba(100,100,100,.1);
+}
+
+.formulaDisplayError {
+  padding: 10px 20px;
+  grid-area: display;
+  font-family: var(--monofont);
+  color: var(--error-fg);
+}
