@@ -2,7 +2,7 @@
   --fg: black;
   --bg: white;
   --input-fg: var(--fg);
-  --input-bg: rgba(200,200,200,0.1);
+  --input-bg: rgba(100,100,100,0.05);
   --display-fg: black;
   --display-bg: white;
   --error-fg: #777;
@@ -13,33 +13,31 @@
   "Courier New", monospace;
 }
 
-html, body {
-  margin: 0;
-  background-color: var(--bg);
-  font-family: var(--sansfont);
-}
-
 button {
-  font-family: var(--sansfont);
-  font-size: .8em;
+  color: var(--fg);
+  font-size: .8rem;
   align-self: baseline;
 }
 
 .formulaWrapper {
-  padding: 10px;
-  display: grid;
-  grid-template-areas:
-    "title title"
-    "options options"
-    "input input"
-    "display display";
   color: var(--fg);
   background-color: var(--bg);
+  margin: 0;
+  display: grid;
+  padding: 0.5rem;
+  grid-template-areas:
+    "title"
+    "options"
+    "input"
+    "display";
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto) 1fr;
+  overflow: hidden;
 }
 
 .title {
   grid-area: title;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -47,41 +45,52 @@ button {
   grid-area: options;
   display: flex;
   flex-direction: row;
+  flex: 0 1 auto;
+  margin: 0.2rem 0;
 }
 
-.formulaOptions > div {
-  margin-right: 1em;
-  display: flex;
-  flex-direction: row;
+.formulaOptions > * {
+  margin-right: 1rem;
+  flex: 0 1 auto;
+}
+
+.formulaOptions > * > * {
+  flex: 0 1 auto;
 }
 
 .formulaInput {
   grid-area: input;
 }
 
-.formulaInput > textarea {
-  font-size: 1.2em;
+textarea {
+  font-size: 1.2rem;
   border: 2px solid var(--fg);
   color: var(--input-fg);
-  background-color: var(--input-bg);
+  background-color:  var(--input-bg);
   font-family: var(--monofont);
+  outline: none;
+}
+
+textarea:focus {
+  font-weight: bold;
+}
+
+.formulaDisplayWrapper {
+  grid-area: display;
+  overflow: scroll;
+  background-color: var(--display-bg);
+  margin-top: 0.4rem;
 }
 
 .formulaDisplay {
   width: fit-content;
-  padding: 10px 20px;
-  grid-area: display;
+  height: fit-content;
+  padding: 0.3rem;
   color: var(--display-fg);
-  background-color: var(--display-bg);
-  border: 1px solid var(--display-bg);
-}
-
-.formulaDisplay:hover {
-  border: 1px solid rgba(100,100,100,.1);
 }
 
 .formulaDisplayError {
-  padding: 10px 20px;
+  padding: .2rem .4rem;
   grid-area: display;
   font-family: var(--monofont);
   color: var(--error-fg);

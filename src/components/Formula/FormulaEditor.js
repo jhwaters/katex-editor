@@ -15,7 +15,9 @@ const FormulaEditor = () => (
       <RandomExampleButton />
     </div>
     <FormulaInput />
-    <FormulaDisplay />
+    <div className={styles.formulaDisplayWrapper}>
+      <FormulaDisplay />
+    </div>
   </div>
 )
 

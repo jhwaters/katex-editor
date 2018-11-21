@@ -36,6 +36,7 @@ const FormulaInput = ({formula, onchange}) => (
       className={styles.inputFormula} 
       onKeyDown={onKeyDown}
       onChange={onchange}
+      title="Type LaTeX code here"
       rows="6"
       cols="50"
       spellCheck="false"

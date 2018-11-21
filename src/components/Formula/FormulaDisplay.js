@@ -8,7 +8,7 @@ const FormulaDisplay = ({math, displayMode, size}) => {
   try {
     const html = katex.renderToString(math, {displayMode: displayMode});
     return (
-      <div style={{fontSize: `${size}em`}}
+      <div style={{fontSize: `${size}rem`}}
         className={styles.formulaDisplay} >
         <span dangerouslySetInnerHTML={{__html: html}} />
       </div>
