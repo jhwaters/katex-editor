@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/katex-editor/precache-manifest.0ce626e6d7921cd866551e20301792f4.js"
+  "/katex-editor/precache-manifest.beda02430351caf021d3f8746ef04a4a.js"
 );
 
 workbox.clientsClaim();

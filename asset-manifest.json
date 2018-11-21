@@ -1,16 +1,16 @@
 {
-  "main.css": "/katex-editor/static/css/main.c254848e.chunk.css",
-  "main.js": "/katex-editor/static/js/main.7e7dfbe3.chunk.js",
-  "main.js.map": "/katex-editor/static/js/main.7e7dfbe3.chunk.js.map",
+  "main.css": "/katex-editor/static/css/main.1076c89d.chunk.css",
+  "main.js": "/katex-editor/static/js/main.76736d93.chunk.js",
+  "main.js.map": "/katex-editor/static/js/main.76736d93.chunk.js.map",
   "static/css/1.5d3ca9a7.chunk.css": "/katex-editor/static/css/1.5d3ca9a7.chunk.css",
   "static/js/1.5ded1abd.chunk.js": "/katex-editor/static/js/1.5ded1abd.chunk.js",
   "static/js/1.5ded1abd.chunk.js.map": "/katex-editor/static/js/1.5ded1abd.chunk.js.map",
   "runtime~main.js": "/katex-editor/static/js/runtime~main.66419637.js",
   "runtime~main.js.map": "/katex-editor/static/js/runtime~main.66419637.js.map",
   "static/media/katex.min.css": "/katex-editor/static/media/KaTeX_Main-Regular.424335d9.ttf",
-  "static/css/main.c254848e.chunk.css.map": "/katex-editor/static/css/main.c254848e.chunk.css.map",
+  "static/css/main.1076c89d.chunk.css.map": "/katex-editor/static/css/main.1076c89d.chunk.css.map",
   "static/css/1.5d3ca9a7.chunk.css.map": "/katex-editor/static/css/1.5d3ca9a7.chunk.css.map",
   "index.html": "/katex-editor/index.html",
-  "precache-manifest.0ce626e6d7921cd866551e20301792f4.js": "/katex-editor/precache-manifest.0ce626e6d7921cd866551e20301792f4.js",
+  "precache-manifest.beda02430351caf021d3f8746ef04a4a.js": "/katex-editor/precache-manifest.beda02430351caf021d3f8746ef04a4a.js",
   "service-worker.js": "/katex-editor/service-worker.js"
 }
