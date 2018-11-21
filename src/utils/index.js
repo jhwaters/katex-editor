@@ -1,4 +1,5 @@
-import { latexfmt, latexExamples } from './latex'
+import latexfmt from './latexfmt'
+import * as latexExamples from './latexExamples'
 
 export {
   latexfmt,
